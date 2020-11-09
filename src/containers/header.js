@@ -1,34 +1,42 @@
 import React from 'react';
 import { Header } from '../components';
+import { FaBars, FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa';
 
-export function HeaderContainer({ children }) {
+export function HeaderContainer({ toggle, children }) {
     const title = '<devjustin>';
 
     return (
         <Header>
             <Header.Frame>
-                <Header.Group>
-                    <Header.Title>{title}</Header.Title>
-                    <Header.Text>Home</Header.Text>
-                    <Header.Text>About</Header.Text>
-                    <Header.Text>Projects</Header.Text>
-                    <Header.Text>Contact</Header.Text>
-                </Header.Group>
+                <Header.Title>{title}</Header.Title>
+                <Header.MobileIcon onClick={toggle}>
+                    <FaBars />
+                </Header.MobileIcon>
+                <Header.NavMenu>
+                    <Header.NavItem>
+                        <Header.NavLinks to="about">About</Header.NavLinks>
+                    </Header.NavItem>
+                    <Header.NavItem>
+                        <Header.NavLinks to="skills">Skills</Header.NavLinks>
+                    </Header.NavItem>
+                    <Header.NavItem>
+                        <Header.NavLinks to="projects">
+                            Projects
+                        </Header.NavLinks>
+                    </Header.NavItem>
+                    <Header.NavItem>
+                        <Header.NavLinks to="contact">Contact</Header.NavLinks>
+                    </Header.NavItem>
+                </Header.NavMenu>
                 <Header.Group>
                     <Header.Picture>
-                        <img src="./images/icons/facebook.png" alt="facebook" />
+                        <FaFacebook />
                     </Header.Picture>
                     <Header.Picture>
-                        <img
-                            src="./images/icons/github-logo.png"
-                            alt="github"
-                        />
+                        <FaGithub />
                     </Header.Picture>
                     <Header.Picture>
-                        <img
-                            src="./images/icons/instagram.png"
-                            alt="instagram"
-                        />
+                        <FaInstagram />
                     </Header.Picture>
                 </Header.Group>
             </Header.Frame>

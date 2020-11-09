@@ -2,10 +2,15 @@ import { Home } from './pages';
 import logo from './logo.svg';
 import './App.css';
 
+import { BrowserRouter as Router } from 'react-router-dom';
+
 function App() {
     return (
         <div className="App">
-            <Home></Home>
+            <Router>
+                <Home></Home>
+            </Router>
+
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>

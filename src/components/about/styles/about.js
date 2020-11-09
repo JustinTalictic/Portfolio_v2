@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
-export const Background = styled.div``;
+export const Background = styled.div`
+padding 5rem 5rem;`;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+    text-transform: uppercase;
+`;
 
 export const Text = styled.p``;
 
