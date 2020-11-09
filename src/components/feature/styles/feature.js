@@ -1,27 +1,31 @@
 import styled from 'styled-components';
 
-export const Background = styled.section`
+export const Background = styled.div`
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    position: relative;
     background-image: linear-gradient(
             rgba(255, 255, 255, 0.75),
             rgba(255, 255, 255, 0.75)
         ),
         url(../images/background/forest1.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    justify-content: center;
-    align-items: center;
+    z-index: -1;
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    background: black;
+`;
 
 export const Title = styled.h1`
     font-size: 4em;
     margin: 0;
     margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const Text = styled.div`
@@ -30,6 +34,8 @@ export const Text = styled.div`
     background: rgba(255, 195, 15, 0.5);
     padding: 0 5px;
     margin-bottom: 6rem;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const Button = styled.button`
@@ -39,6 +45,8 @@ export const Button = styled.button`
     border: none;
     outline: none;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 
     img {
         filter: brightness(0) invert(1);

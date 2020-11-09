@@ -36,7 +36,6 @@ export const Title = styled(LinkR)`
     font-size: 1.5em;
     display: flex;
     align-items: center;
-    margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
 `;
@@ -61,7 +60,6 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
 
     @media screen and (max-width: 768px) {
         display: none;
