@@ -3,16 +3,19 @@ import styled from 'styled-components';
 export const Background = styled.section`
     display: flex;
     flex-direction: column;
-    background: #464646;
     height: 100vh;
     margin: 0;
 `;
 
 export const Container = styled.div`
     display: flex;
-    margin: 0 3rem;
+    width: 100%;
+    right: 0;
+    padding: 0.75rem 3rem;
     align-items: center;
     justify-content: space-between;
+    background: #464646;
+    box-sizing: border-box;
 `;
 
 export const Title = styled.div`
@@ -40,7 +43,14 @@ export const Picture = styled.button`
     outline: none;
     border: none;
 
+    img {
+        filter: brightness(0) invert(1);
+        padding-top: 0.4rem;
+        margin-bottom: 1em;
+    }
+
     &:hover {
+        cursor: pointer;
         background: #e0e0e0;
     }
 `;

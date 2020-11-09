@@ -34,8 +34,8 @@ export const Text = styled.div`
 
 export const Button = styled.button`
     background: #464646;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     border: none;
     outline: none;
     border-radius: 50%;

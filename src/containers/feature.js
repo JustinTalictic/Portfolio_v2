@@ -1,5 +1,5 @@
 import React from 'react';
-import { Feature, Header } from '../components';
+import { Feature } from '../components';
 
 export function FeatureContainer({ children }) {
     return (

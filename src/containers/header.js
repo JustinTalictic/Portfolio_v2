@@ -3,6 +3,7 @@ import { Header } from '../components';
 
 export function HeaderContainer({ children }) {
     const title = '<devjustin>';
+
     return (
         <Header>
             <Header.Frame>
@@ -14,9 +15,21 @@ export function HeaderContainer({ children }) {
                     <Header.Text>Contact</Header.Text>
                 </Header.Group>
                 <Header.Group>
-                    <Header.Picture></Header.Picture>
-                    <Header.Picture></Header.Picture>
-                    <Header.Picture></Header.Picture>
+                    <Header.Picture>
+                        <img src="./images/icons/facebook.png" alt="facebook" />
+                    </Header.Picture>
+                    <Header.Picture>
+                        <img
+                            src="./images/icons/github-logo.png"
+                            alt="github"
+                        />
+                    </Header.Picture>
+                    <Header.Picture>
+                        <img
+                            src="./images/icons/instagram.png"
+                            alt="instagram"
+                        />
+                    </Header.Picture>
                 </Header.Group>
             </Header.Frame>
             {children}
