@@ -4,6 +4,15 @@ import { Feature } from '../components';
 export function FeatureContainer({ children }) {
     return (
         <Feature>
+            <Feature.HeroBg>
+                <Feature.VideoBg
+                    autoPlay
+                    loop
+                    muted
+                    src={'/videos/video.mp4'}
+                    type="video/mp4"
+                />
+            </Feature.HeroBg>
             <Feature.Frame>
                 <Feature.Title>I am Justin Talictic</Feature.Title>
                 <Feature.Text>Aspiring Developer</Feature.Text>

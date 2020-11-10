@@ -1,5 +1,13 @@
 import React from 'react';
-import { Background, Container, Title, Text, Button } from './styles/feature';
+import {
+    Background,
+    Container,
+    Title,
+    Text,
+    Button,
+    HeroBg,
+    VideoBg,
+} from './styles/feature';
 
 export default function Feature({ children, ...restProps }) {
     return <Background {...restProps}>{children}</Background>;
@@ -19,4 +27,12 @@ Feature.Text = function FeatureText({ children, ...restProps }) {
 
 Feature.Button = function FeatureButton({ children, ...restProps }) {
     return <Button {...restProps}>{children}</Button>;
+};
+
+Feature.HeroBg = function FeatureHeroBg({ children, ...restProps }) {
+    return <HeroBg {...restProps}>{children}</HeroBg>;
+};
+
+Feature.VideoBg = function FeatureVideoBg({ children, ...restProps }) {
+    return <VideoBg {...restProps}>{children}</VideoBg>;
 };

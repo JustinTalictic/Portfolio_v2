@@ -13,19 +13,53 @@ export const Background = styled.div`
         url(../images/background/forest1.jpg);
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    z-index: 1;
+`;
+
+export const HeroBg = styled.div`
+    positon: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+`;
+
+export const VideoBg = styled.video`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232a34;
 `;
 
 export const Container = styled.div`
-    background: black;
+    z-index: 3;
+    max-width: 1200px;
+    position: absolute;
+    padding 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const Title = styled.h1`
-    font-size: 4em;
+    font-size: 4rem;
+    text-align: center;
     margin: 0;
     margin-bottom: 2rem;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
 `;
 
 export const Text = styled.div`
@@ -36,6 +70,15 @@ export const Text = styled.div`
     margin-bottom: 6rem;
     align-items: center;
     justify-content: center;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
 `;
 
 export const Button = styled.button`

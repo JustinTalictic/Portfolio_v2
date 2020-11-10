@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect, createContext } from 'react';
 import { Header } from '../components';
 import { FaBars, FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa';
 
 export function HeaderContainer({ toggle, children }) {
     const title = '<devjustin>';
+    const [scrollNav, setScrollNav] = useState(false);
+
+    function changeNav() {
+        if (window.scrollY >= 80) {
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav);
+    }, []);
 
     return (
-        <Header>
+        <Header scrollNav={scrollNav}>
             <Header.Frame>
                 <Header.Title>{title}</Header.Title>
                 <Header.MobileIcon onClick={toggle}>
