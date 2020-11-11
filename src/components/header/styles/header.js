@@ -72,22 +72,23 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-color: white;
+    color: white;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding 0 1rem;
     height: 100%;
     cursor: pointer;
-    transition: 0.5s;
     font-weight: bold;
+    box-sizing: border-box;
 
     &.active {
-        border-bottom: 3px solid #FFFF00;
+        border-bottom: 3px solid rgba(255, 195, 15, 0.8);
     }
     
     &:hover {
         opacity: 0.5;
+        transition: 0.5s;
     }
 `;
 

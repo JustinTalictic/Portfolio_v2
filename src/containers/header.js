@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../components';
-import { FaBars, FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+import {
+    FaBars,
+    FaFacebook,
+    FaGithub,
+    FaInstagram,
+    FaLinkedin,
+} from 'react-icons/fa';
+import { animateScroll as scroll } from 'react-scroll';
 
 export function HeaderContainer({ toggle, children }) {
     const title = '<devjustin>';
@@ -15,6 +21,10 @@ export function HeaderContainer({ toggle, children }) {
         }
     }
 
+    function toggleHome() {
+        scroll.scrollToTop();
+    }
+
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
     }, []);
@@ -22,7 +32,9 @@ export function HeaderContainer({ toggle, children }) {
     return (
         <Header scrollNav={scrollNav}>
             <Header.Frame>
-                <Header.Title>{title}</Header.Title>
+                <Header.Title to="/" onClick={toggleHome}>
+                    {title}
+                </Header.Title>
                 <Header.MobileIcon onClick={toggle}>
                     <FaBars />
                 </Header.MobileIcon>
@@ -78,10 +90,13 @@ export function HeaderContainer({ toggle, children }) {
                 </Header.NavMenu>
                 <Header.Group>
                     <Header.Picture>
-                        <FaFacebook />
+                        <FaLinkedin />
                     </Header.Picture>
                     <Header.Picture>
                         <FaGithub />
+                    </Header.Picture>
+                    <Header.Picture>
+                        <FaFacebook />
                     </Header.Picture>
                     <Header.Picture>
                         <FaInstagram />

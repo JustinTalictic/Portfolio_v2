@@ -3,8 +3,8 @@ import { Skills } from '../components';
 
 export function SkillsContainer({ children }) {
     return (
-        <Skills>
-            <Skills.H1></Skills.H1>
+        <Skills id="skills">
+            <Skills.H1>Skills</Skills.H1>
             <Skills.Wrapper>
                 <Skills.Card>
                     <Skills.Icon />

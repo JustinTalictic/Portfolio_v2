@@ -66,7 +66,7 @@ export const Title = styled.h1`
 export const Text = styled.div`
     text-transform: uppercase;
     font-size: 1.5em;
-    background: rgba(255, 195, 15, 0.5);
+    background: rgba(255, 195, 15, 0.8);
     padding: 0 5px;
     margin-bottom: 6rem;
     align-items: center;

@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    background: #f1f1f1;
+    padding: 5rem 5rem;
+`;
 
 export const Wrapper = styled.div``;
 
