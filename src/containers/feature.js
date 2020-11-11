@@ -16,7 +16,14 @@ export function FeatureContainer({ children }) {
             <Feature.Frame>
                 <Feature.Title>I am Justin Talictic</Feature.Title>
                 <Feature.Text>Aspiring Developer</Feature.Text>
-                <Feature.Button>
+                <Feature.Button
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                >
                     <img src="./images/icons/arrow-down.png" alt="arrowdown" />
                 </Feature.Button>
             </Feature.Frame>

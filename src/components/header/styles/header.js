@@ -83,8 +83,7 @@ color: white;
     font-weight: bold;
 
     &.active {
-        border-bottom: 3px solid #fff;
-        
+        border-bottom: 3px solid #FFFF00;
     }
     
     &:hover {

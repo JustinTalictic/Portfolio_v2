@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
 
 export const Background = styled.div`
     display: flex;
@@ -81,7 +82,7 @@ export const Text = styled.div`
     }
 `;
 
-export const Button = styled.button`
+export const Button = styled(LinkS)`
     background: #464646;
     height: 3rem;
     width: 3rem;
@@ -93,8 +94,8 @@ export const Button = styled.button`
 
     img {
         filter: brightness(0) invert(1);
-        padding-top: 0.4rem;
-        width: 10px;
+        padding-top: 1.2rem;
+        width: 12px;
     }
 
     &:hover {

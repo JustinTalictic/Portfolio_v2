@@ -1,33 +1,43 @@
 import React from 'react';
 import {
-    Background,
     Container,
-    Title,
-    Text,
+    Wrapper,
+    H1,
+    Card,
+    Icon,
+    H2,
+    Resume,
     Picture,
-    Group,
 } from './styles/skills';
 
 export default function Skills({ children, ...restProps }) {
-    return <Background {...restProps}>{children}</Background>;
+    return <Container {...restProps}>{children}</Container>;
 }
 
-Skills.Frame = function SkillsFrame({ children, ...restProps }) {
-    return <Container {...restProps}>{children}</Container>;
+Skills.Wrapper = function SkillsWrapper({ children, ...restProps }) {
+    return <Wrapper {...restProps}>{children}</Wrapper>;
 };
 
-Skills.Title = function SkillsTitle({ children, ...restProps }) {
-    return <Title {...restProps}>{children}</Title>;
+Skills.H1 = function SkillsH1({ children, ...restProps }) {
+    return <H1 {...restProps}>{children}</H1>;
 };
 
-Skills.Text = function SkillsText({ children, ...restProps }) {
-    return <Text {...restProps}>{children}</Text>;
+Skills.Card = function SkillsCard({ children, ...restProps }) {
+    return <Card {...restProps}>{children}</Card>;
 };
 
-Skills.Picture = function SkillsPicture({ src, ...restProps }) {
-    return <Picture {...restProps} src={src}></Picture>;
+Skills.Icon = function SkillsIcon({ src, ...restProps }) {
+    return <Icon {...restProps} src={src}></Icon>;
 };
 
-Skills.Group = function SkillsGroup({ children, ...restProps }) {
-    return <Group {...restProps}>{children}</Group>;
+Skills.H2 = function SkillsH2({ children, ...restProps }) {
+    return <H2 {...restProps}>{children}</H2>;
+};
+
+Skills.Resume = function SkillsResume({ children, ...restProps }) {
+    return <Resume {...restProps}>{children}</Resume>;
+};
+
+Skills.Picture = function SkillsPIcture({ children, ...restProps }) {
+    return <Picture {...restProps}>{children}</Picture>;
 };

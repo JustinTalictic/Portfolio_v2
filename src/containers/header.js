@@ -1,6 +1,7 @@
-import React, { useState, useEffect, createContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Header } from '../components';
 import { FaBars, FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 export function HeaderContainer({ toggle, children }) {
     const title = '<devjustin>';
@@ -27,18 +28,52 @@ export function HeaderContainer({ toggle, children }) {
                 </Header.MobileIcon>
                 <Header.NavMenu>
                     <Header.NavItem>
-                        <Header.NavLinks to="about">About</Header.NavLinks>
+                        <Header.NavLinks
+                            to="about"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                        >
+                            About
+                        </Header.NavLinks>
                     </Header.NavItem>
                     <Header.NavItem>
-                        <Header.NavLinks to="skills">Skills</Header.NavLinks>
+                        <Header.NavLinks
+                            to="skills"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                        >
+                            Skills
+                        </Header.NavLinks>
                     </Header.NavItem>
                     <Header.NavItem>
-                        <Header.NavLinks to="projects">
+                        <Header.NavLinks
+                            to="projects"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                        >
                             Projects
                         </Header.NavLinks>
                     </Header.NavItem>
                     <Header.NavItem>
-                        <Header.NavLinks to="contact">Contact</Header.NavLinks>
+                        <Header.NavLinks
+                            to="contact"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                        >
+                            Contact
+                        </Header.NavLinks>
                     </Header.NavItem>
                 </Header.NavMenu>
                 <Header.Group>

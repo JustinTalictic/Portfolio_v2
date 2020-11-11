@@ -3,6 +3,7 @@ import { HeaderContainer } from '../containers/header';
 import { FeatureContainer } from '../containers/feature';
 import { AboutContainer } from '../containers/about';
 import { SidebarContainer } from '../containers/sidebar';
+import { SkillsContainer } from '../containers/skills';
 
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ export default function Home() {
             <HeaderContainer toggle={toggle}></HeaderContainer>
             <FeatureContainer></FeatureContainer>
             <AboutContainer></AboutContainer>
+            {/* <SkillsContainer></SkillsContainer> */}
         </>
     );
 }
