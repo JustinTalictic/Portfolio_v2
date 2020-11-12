@@ -62,3 +62,25 @@ export const Link = styled(LinkS)`
         transition: 0.2s ease-in-out;
     }
 `;
+
+export const Group = styled.div`
+    margin-top: 2rem;
+`;
+
+export const Picture = styled.button`
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background: transparent;
+    outline: none;
+    border: none;
+    filter: brightness(0) invert(1);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-top: 0.25rem;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+`;

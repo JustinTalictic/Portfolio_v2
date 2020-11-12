@@ -6,6 +6,8 @@ import {
     Wrapper,
     Menu,
     Link,
+    Group,
+    Picture,
 } from './styles/sidebar';
 
 export default function Sidebar({ children, ...restProps }) {
@@ -31,4 +33,12 @@ Sidebar.Menu = function SidebarMenu({ children, ...restProps }) {
 
 Sidebar.Link = function SidebarLink({ children, ...restProps }) {
     return <Link {...restProps}>{children}</Link>;
+};
+
+Sidebar.Group = function SidebarGroup({ children, ...restProps }) {
+    return <Group {...restProps}>{children}</Group>;
+};
+
+Sidebar.Picture = function SidebarPicture({ children, ...restProps }) {
+    return <Picture {...restProps}>{children}</Picture>;
 };
