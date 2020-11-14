@@ -10,6 +10,18 @@ export function SkillsContainer({ children }) {
                     <Skills.Icon />
                     <Skills.H2>React</Skills.H2>
                 </Skills.Card>
+                <Skills.Card>
+                    <Skills.Icon />
+                    <Skills.H2>Javascript</Skills.H2>
+                </Skills.Card>
+                <Skills.Card>
+                    <Skills.Icon />
+                    <Skills.H2>HTML</Skills.H2>
+                </Skills.Card>
+                <Skills.Card>
+                    <Skills.Icon />
+                    <Skills.H2>CSS</Skills.H2>
+                </Skills.Card>
             </Skills.Wrapper>
             <Skills.Wrapper>
                 <Skills.Resume>
