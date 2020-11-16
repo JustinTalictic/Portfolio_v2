@@ -10,7 +10,7 @@ export function AboutContainer({ children }) {
                     <About.Text>
                         I am a graduate from the University of Houston with a
                         bachelors in Computer Science. I am currently pursuing
-                        an opportunity to start my career in web development.
+                        an opportunity to start a career in web development.
                     </About.Text>
                 </About.Frame>
             </About.Container>

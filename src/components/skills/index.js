@@ -3,9 +3,6 @@ import {
     Container,
     Banner,
     Wrapper,
-    H1,
-    Card,
-    Icon,
     H2,
     Resume,
     Picture,
@@ -26,18 +23,6 @@ Skills.Frame = function SkillsFrame({ children, ...restProps }) {
 
 Skills.Wrapper = function SkillsWrapper({ children, ...restProps }) {
     return <Wrapper {...restProps}>{children}</Wrapper>;
-};
-
-Skills.H1 = function SkillsH1({ children, ...restProps }) {
-    return <H1 {...restProps}>{children}</H1>;
-};
-
-Skills.Card = function SkillsCard({ children, ...restProps }) {
-    return <Card {...restProps}>{children}</Card>;
-};
-
-Skills.Icon = function SkillsIcon({ src, ...restProps }) {
-    return <Icon {...restProps} src={src}></Icon>;
 };
 
 Skills.H2 = function SkillsH2({ children, ...restProps }) {

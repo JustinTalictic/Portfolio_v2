@@ -32,7 +32,7 @@ export function SkillsContainer({ children }) {
             </Skills.Banner>
             <Skills.Wrapper>
                 <Skills.Resume>
-                    <Skills.Picture />
+                    <Skills.Picture src="./images/icons/resume.svg" />
                     <Skills.H2>Resume</Skills.H2>
                 </Skills.Resume>
             </Skills.Wrapper>
