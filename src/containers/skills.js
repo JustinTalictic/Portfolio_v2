@@ -4,25 +4,32 @@ import { Skills } from '../components';
 export function SkillsContainer({ children }) {
     return (
         <Skills id="skills">
-            <Skills.H1>Skills</Skills.H1>
-            <Skills.Wrapper>
-                <Skills.Card>
-                    <Skills.Icon />
-                    <Skills.H2>React</Skills.H2>
-                </Skills.Card>
-                <Skills.Card>
-                    <Skills.Icon />
-                    <Skills.H2>Javascript</Skills.H2>
-                </Skills.Card>
-                <Skills.Card>
-                    <Skills.Icon />
-                    <Skills.H2>HTML</Skills.H2>
-                </Skills.Card>
-                <Skills.Card>
-                    <Skills.Icon />
-                    <Skills.H2>CSS</Skills.H2>
-                </Skills.Card>
-            </Skills.Wrapper>
+            <Skills.Banner>
+                <Skills.Frame>
+                    <img
+                        src="./images/skill-icons/css-icon.png"
+                        alt="css-icon"
+                    />
+                </Skills.Frame>
+                <Skills.Frame>
+                    <img
+                        src="./images/skill-icons/html5-icon.png"
+                        alt="html5-icon"
+                    />
+                </Skills.Frame>
+                <Skills.Frame>
+                    <img
+                        src="./images/skill-icons/javascript-icon.png"
+                        alt="javascript-icon"
+                    />
+                </Skills.Frame>
+                <Skills.Frame>
+                    <img
+                        src="./images/skill-icons/react-icon.png"
+                        alt="react-icon"
+                    />
+                </Skills.Frame>
+            </Skills.Banner>
             <Skills.Wrapper>
                 <Skills.Resume>
                     <Skills.Picture />
