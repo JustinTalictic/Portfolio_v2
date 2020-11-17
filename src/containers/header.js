@@ -90,16 +90,24 @@ export function HeaderContainer({ toggle, children }) {
                 </Header.NavMenu>
                 <Header.Group>
                     <Header.Picture>
-                        <FaLinkedin />
+                        <a href="https://www.linkedin.com/in/justintalictic/">
+                            <FaLinkedin />
+                        </a>
                     </Header.Picture>
                     <Header.Picture>
-                        <FaGithub />
+                        <a href="https://github.com/JustinTalictic">
+                            <FaGithub />
+                        </a>
                     </Header.Picture>
                     <Header.Picture>
-                        <FaFacebook />
+                        <a href="https://www.facebook.com/justin.talictic">
+                            <FaFacebook />
+                        </a>
                     </Header.Picture>
                     <Header.Picture>
-                        <FaInstagram />
+                        <a href="https://www.instagram.com/jaytalictic/">
+                            <FaInstagram />
+                        </a>
                     </Header.Picture>
                 </Header.Group>
             </Header.Frame>

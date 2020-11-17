@@ -5,6 +5,8 @@ import { AboutContainer } from '../containers/about';
 import { SidebarContainer } from '../containers/sidebar';
 import { SkillsContainer } from '../containers/skills';
 import { FooterContainer } from '../containers/footer';
+import { ProjectsContainer } from '../containers/projects';
+import { ContactContainer } from '../containers/contact';
 
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,10 +22,12 @@ export default function Home() {
                 toggle={toggle}
             ></SidebarContainer>
             <HeaderContainer toggle={toggle}></HeaderContainer>
-            <FeatureContainer></FeatureContainer>
-            <AboutContainer></AboutContainer>
-            <SkillsContainer></SkillsContainer>
-            <FooterContainer></FooterContainer>
+            <FeatureContainer />
+            <AboutContainer />
+            <SkillsContainer />
+            <ProjectsContainer></ProjectsContainer>
+            <ContactContainer />
+            <FooterContainer />
         </>
     );
 }

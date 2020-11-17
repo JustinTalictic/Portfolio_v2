@@ -22,16 +22,24 @@ export function SidebarContainer({ isOpen, toggle, children }) {
                     </Sidebar.Link>
                     <Sidebar.Group>
                         <Sidebar.Picture>
-                            <FaLinkedin />
+                            <a href="https://www.linkedin.com/in/justintalictic/">
+                                <FaLinkedin />
+                            </a>
                         </Sidebar.Picture>
                         <Sidebar.Picture>
-                            <FaGithub />
+                            <a href="https://github.com/JustinTalictic">
+                                <FaGithub />
+                            </a>
                         </Sidebar.Picture>
                         <Sidebar.Picture>
-                            <FaFacebook />
+                            <a href="https://www.facebook.com/justin.talictic">
+                                <FaFacebook />
+                            </a>
                         </Sidebar.Picture>
                         <Sidebar.Picture>
-                            <FaInstagram />
+                            <a href="https://www.instagram.com/jaytalictic/">
+                                <FaInstagram />
+                            </a>
                         </Sidebar.Picture>
                     </Sidebar.Group>
                 </Sidebar.Menu>

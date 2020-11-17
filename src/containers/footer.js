@@ -15,16 +15,24 @@ export function FooterContainer({ children }) {
             </Footer.Group>
             <Footer.Group>
                 <Footer.Picture>
-                    <FaLinkedin />
+                    <a href="https://www.linkedin.com/in/justintalictic/">
+                        <FaLinkedin />
+                    </a>
                 </Footer.Picture>
                 <Footer.Picture>
-                    <FaGithub />
+                    <a href="https://github.com/JustinTalictic">
+                        <FaGithub />
+                    </a>
                 </Footer.Picture>
                 <Footer.Picture>
-                    <FaFacebook />
+                    <a href="https://www.facebook.com/justin.talictic">
+                        <FaFacebook />
+                    </a>
                 </Footer.Picture>
                 <Footer.Picture>
-                    <FaInstagram />
+                    <a href="https://www.instagram.com/jaytalictic/">
+                        <FaInstagram />
+                    </a>
                 </Footer.Picture>
             </Footer.Group>
         </Footer>
