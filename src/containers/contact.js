@@ -30,8 +30,6 @@ export function ContactContainer({ children }) {
                     value={emailAddress}
                     onChange={({ target }) => setEmailAddress(target.value)}
                 />
-            </Contact.Frame>
-            <Contact.Frame>
                 <Contact.Textarea
                     rows="4"
                     cols="30"
@@ -39,11 +37,13 @@ export function ContactContainer({ children }) {
                     placeholder="Message"
                     onChange={({ target }) => setMessage(target.value)}
                 />
+                <Contact.Submit disabled={isInvalid} type="submit">
+                    Send
+                </Contact.Submit>
             </Contact.Frame>
-
-            <Contact.Submit disabled={isInvalid} type="submit">
-                Send
-            </Contact.Submit>
+            <Contact.Picture>
+                <img src="./images/icons/contact.svg" alt="contact" />
+            </Contact.Picture>
         </Contact>
     );
 }

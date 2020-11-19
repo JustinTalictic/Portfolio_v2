@@ -7,6 +7,7 @@ import {
     Input,
     Textarea,
     Submit,
+    Picture,
 } from './styles/contact';
 
 export default function Contact({ children, ...restProps }) {
@@ -35,4 +36,8 @@ Contact.Textarea = function ContactTextarea({ children, ...restProps }) {
 
 Contact.Submit = function ContactSubmit({ children, ...restProps }) {
     return <Submit {...restProps}>{children}</Submit>;
+};
+
+Contact.Picture = function ContactPicture({ children, ...restProps }) {
+    return <Picture {...restProps}>{children}</Picture>;
 };
