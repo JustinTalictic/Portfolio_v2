@@ -16,10 +16,7 @@ export function AboutContainer({ children }) {
             </About.Container>
             <About.Container>
                 <About.Picture>
-                    <img
-                        src="./images/portfolio-picture/me.jpg"
-                        alt="picture of me"
-                    />
+                    <img src="./images/portfolio-picture/me.jpg" alt="me" />
                 </About.Picture>
             </About.Container>
         </About>

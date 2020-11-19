@@ -1,5 +1,13 @@
 import React from 'react';
-import { Background, Frame, Title } from './styles/contact';
+import {
+    Background,
+    Frame,
+    Title,
+    Text,
+    Input,
+    Textarea,
+    Submit,
+} from './styles/contact';
 
 export default function Contact({ children, ...restProps }) {
     return <Background {...restProps}>{children}</Background>;
@@ -11,4 +19,20 @@ Contact.Frame = function ContactFrame({ children, ...restProps }) {
 
 Contact.Title = function ContactTitle({ children, ...restProps }) {
     return <Title {...restProps}>{children}</Title>;
+};
+
+Contact.Text = function ContactText({ children, ...restProps }) {
+    return <Text {...restProps}>{children}</Text>;
+};
+
+Contact.Input = function ContactInput({ children, ...restProps }) {
+    return <Input {...restProps}>{children}</Input>;
+};
+
+Contact.Textarea = function ContactTextarea({ children, ...restProps }) {
+    return <Textarea {...restProps}>{children}</Textarea>;
+};
+
+Contact.Submit = function ContactSubmit({ children, ...restProps }) {
+    return <Submit {...restProps}>{children}</Submit>;
 };
