@@ -70,6 +70,7 @@ export const Input = styled.input`
     padding: 7px 5px;
     margin-bottom: 1rem;
     background: transparent;
+    font-family: 'Open Sans', sans-serif;
 `;
 
 export const Textarea = styled.textarea`
@@ -81,6 +82,7 @@ export const Textarea = styled.textarea`
     background: transparent;
     resize: none;
     margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
 `;
 
 export const Submit = styled.button`

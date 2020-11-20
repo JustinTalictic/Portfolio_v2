@@ -3,6 +3,8 @@ import { Contact } from '../components';
 import { FirebaseContext } from '../context/firebase';
 
 export function ContactContainer({ children }) {
+    const { firebase } = useContext(FirebaseContext);
+
     const [name, setName] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [message, setMessage] = useState('');
@@ -12,6 +14,9 @@ export function ContactContainer({ children }) {
     const handleEmail = event => {
         event.preventDefault();
         console.log(123);
+        console.log(name);
+        console.log(emailAddress);
+        console.log(message);
     };
 
     return (

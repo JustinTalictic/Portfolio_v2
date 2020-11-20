@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { GlobalStyles } from './global-styles';
 import App from './App';
 import { FirebaseContext } from './context/firebase';
 import Firebase from 'firebase/app';
@@ -23,6 +23,7 @@ const firebase = Firebase.initializeApp(firebaseConfig);
 ReactDOM.render(
     <React.StrictMode>
         <FirebaseContext.Provider value={{ firebase }}>
+            <GlobalStyles />
             <App />
         </FirebaseContext.Provider>
     </React.StrictMode>,
