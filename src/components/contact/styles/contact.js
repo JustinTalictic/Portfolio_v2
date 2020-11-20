@@ -130,3 +130,11 @@ export const Picture = styled.div`
         justify-self: start;
     }
 `;
+
+export const Status = styled.div`
+    color: #5ddc00;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+`;

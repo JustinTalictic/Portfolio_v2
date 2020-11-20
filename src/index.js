@@ -4,6 +4,7 @@ import { GlobalStyles } from './global-styles';
 import App from './App';
 import { FirebaseContext } from './context/firebase';
 import Firebase from 'firebase/app';
+import 'firebase/firestore';
 
 import reportWebVitals from './reportWebVitals';
 

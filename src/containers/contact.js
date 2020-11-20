@@ -4,19 +4,35 @@ import { FirebaseContext } from '../context/firebase';
 
 export function ContactContainer({ children }) {
     const { firebase } = useContext(FirebaseContext);
+    const db = firebase.firestore();
+    const docRef = db.collection('contact-emails');
 
     const [name, setName] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [message, setMessage] = useState('');
+    const [status, setStatus] = useState('');
 
     const isInvalid = message === '' || emailAddress === '' || name === '';
 
     const handleEmail = event => {
         event.preventDefault();
-        console.log(123);
-        console.log(name);
-        console.log(emailAddress);
-        console.log(message);
+
+        docRef
+            .doc()
+            .set({
+                name: name,
+                email: emailAddress,
+                message: message,
+            })
+            .then(() => {
+                setStatus('Email sent!');
+                setName('');
+                setEmailAddress('');
+                setMessage('');
+            })
+            .catch(error => {
+                setStatus(error.message);
+            });
     };
 
     return (
@@ -31,7 +47,7 @@ export function ContactContainer({ children }) {
                     onChange={({ target }) => setName(target.value)}
                 />
                 <Contact.Input
-                    type="text"
+                    type="email"
                     placeholder="Email address"
                     value={emailAddress}
                     onChange={({ target }) => setEmailAddress(target.value)}
@@ -43,10 +59,12 @@ export function ContactContainer({ children }) {
                     value={message}
                     placeholder="Message"
                     onChange={({ target }) => setMessage(target.value)}
+                    s
                 />
                 <Contact.Submit disabled={isInvalid} type="submit">
                     Send
                 </Contact.Submit>
+                <Contact.Status>Email sent!</Contact.Status>
             </Contact.Frame>
             <Contact.Picture>
                 <img src="./images/icons/contact.svg" alt="contact" />
