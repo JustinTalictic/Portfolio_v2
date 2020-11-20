@@ -37,6 +37,7 @@ export const Picture = styled.button`
     cursor: pointer;
     margin-top: 0.25rem;
     transition: 0.5s;
+    filter: brightness(0);
 
     &:hover {
         filter: brightness(0) invert(1);

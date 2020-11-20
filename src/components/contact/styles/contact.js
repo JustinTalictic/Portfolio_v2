@@ -34,7 +34,7 @@ export const Background = styled.div`
 }
 `;
 
-export const Frame = styled.div`
+export const Frame = styled.form`
     grid-area: frame;
     display: flex;
     flex-direction: column;
