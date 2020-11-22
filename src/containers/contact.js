@@ -14,8 +14,10 @@ export function ContactContainer({ children }) {
 
     const isInvalid = message === '' || emailAddress === '' || name === '';
 
-    const handleEmail = event => {
+    const handleSubmit = event => {
         event.preventDefault();
+
+        const subject = 'Portfolio Contact Email';
 
         docRef
             .doc()
@@ -23,12 +25,16 @@ export function ContactContainer({ children }) {
                 name: name,
                 email: emailAddress,
                 message: message,
+                subject: subject,
             })
             .then(() => {
-                setStatus('Email sent!');
+                setStatus('Email Sent!');
                 setName('');
                 setEmailAddress('');
                 setMessage('');
+                setTimeout(() => {
+                    setStatus('');
+                }, 5000);
             })
             .catch(error => {
                 setStatus(error.message);
@@ -39,7 +45,7 @@ export function ContactContainer({ children }) {
         <Contact id="contact">
             <Contact.Title>Contact Me</Contact.Title>
 
-            <Contact.Frame onSubmit={handleEmail} method="POST">
+            <Contact.Frame onSubmit={handleSubmit} method="POST">
                 <Contact.Input
                     type="text"
                     placeholder="Your name"
@@ -59,12 +65,11 @@ export function ContactContainer({ children }) {
                     value={message}
                     placeholder="Message"
                     onChange={({ target }) => setMessage(target.value)}
-                    s
                 />
                 <Contact.Submit disabled={isInvalid} type="submit">
-                    Send
+                    Submit
                 </Contact.Submit>
-                <Contact.Status>Email sent!</Contact.Status>
+                {status && <Contact.Status>{status}</Contact.Status>}
             </Contact.Frame>
             <Contact.Picture>
                 <img src="./images/icons/contact.svg" alt="contact" />
