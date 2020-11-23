@@ -2,27 +2,41 @@ import React from 'react';
 import { Projects } from '../components';
 
 export function ProjectsContainer({ children }) {
-    return (
-        <Projects id="projects">
-            <Projects.Frame>
-                <Projects.Title>My Projects</Projects.Title>
-            </Projects.Frame>
-            <Projects.Frame>
-                <Projects.CardFrame>
-                    <Projects.Card>
-                        <Projects.CardTitle>*Title*</Projects.CardTitle>
-                    </Projects.Card>
-                </Projects.CardFrame>
-                <Projects.InfoFrame>
-                    <Projects.Info>
-                        <Projects.InfoTitle>*INFO TITLE*</Projects.InfoTitle>
-                        <Projects.Desc>*Descripton*</Projects.Desc>
-                        <Projects.Image></Projects.Image>
-                        <Projects.Button>Live Version</Projects.Button>
-                        <Projects.Button>GitHub</Projects.Button>
-                    </Projects.Info>
-                </Projects.InfoFrame>
-            </Projects.Frame>
-        </Projects>
-    );
+	return (
+		<Projects id="projects">
+			<Projects.Frame>
+				<Projects.Title>My Projects</Projects.Title>
+			</Projects.Frame>
+			<Projects.Frame>
+				<Projects.CardFrame>
+					<Projects.Card>
+						<Projects.CardTitle>*Title*</Projects.CardTitle>
+					</Projects.Card>
+					<Projects.Card>
+						<Projects.CardTitle>*Title*</Projects.CardTitle>
+					</Projects.Card>
+					<Projects.Card>
+						<Projects.CardTitle>*Title*</Projects.CardTitle>
+					</Projects.Card>
+					<Projects.Card>
+						<Projects.CardTitle>*Title*</Projects.CardTitle>
+					</Projects.Card>
+					<Projects.Card>
+						<Projects.CardTitle>*Title*</Projects.CardTitle>
+					</Projects.Card>
+				</Projects.CardFrame>
+				<Projects.InfoFrame>
+					<Projects.Info>
+						<Projects.InfoTitle>*INFO TITLE*</Projects.InfoTitle>
+						<Projects.Desc>*Descripton*</Projects.Desc>
+						<Projects.Image src="../images/project-img/startup.jpg" />
+						<Projects.BtnWrapper>
+							<Projects.Button>Live Version</Projects.Button>
+							<Projects.Button>GitHub</Projects.Button>
+						</Projects.BtnWrapper>
+					</Projects.Info>
+				</Projects.InfoFrame>
+			</Projects.Frame>
+		</Projects>
+	);
 }

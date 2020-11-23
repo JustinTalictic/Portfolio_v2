@@ -1,0 +1,41 @@
+[
+	{
+		"id": 1,
+		"title": "Netflix-Clone",
+		"description": "I created a clone of netflix",
+		"points": {
+			"1": "compound component",
+			"2": "custom hooks",
+			"3": "styled-components"
+		},
+		"img": "/images/project-img/startup.jpg",
+		"gitLink": "https://www.google.com",
+		"liveLink": "https://www.youtube.com"
+	},
+	{
+		"id": 2,
+		"title": "Netflix-Clone",
+		"description": "I created a clone of netflix",
+		"points": {
+			"1": "compound component",
+			"2": "custom hooks",
+			"3": "styled-components"
+		},
+		"img": "/images/project-img/startup.jpg",
+		"gitLink": "https://www.google.com",
+		"liveLink": "https://www.youtube.com"
+	},
+	{
+		"id": 3,
+		"title": "Netflix-Clone",
+		"description": "I created a clone of netflix",
+		"points": {
+			"1": "compound component",
+			"2": "custom hooks",
+			"3": "styled-components"
+		},
+		"img": "/images/project-img/startup.jpg",
+		"gitLink": "https://www.google.com",
+		"liveLink": "https://www.youtube.com"
+	}
+]
