@@ -1,114 +1,92 @@
 import styled from 'styled-components';
 
 export const Background = styled.div`
-	height: 1000px;
-	padding-top: 5rem;
-`;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    padding-top: 5rem;
+    align-items: center;
 
-export const Frame = styled.div`
-	margin: 0 150px;
-	background: red;
+    @media screen and (max-width: 768px) {
+        padding: 100px 0;
+    }
 `;
 
 export const Title = styled.h1``;
 
-export const CardFrame = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-	display: none;
+export const Wrapper = styled.div`
+    display: grid;
+    z-index: 1;
+    height: 760px;
+    width: 100%;
+    max-width: 1100px;
+    margin-right: auto: 
+    margin-left: auto;
+    padding: 0 24px;
+    background: red;
 `;
 
-export const Card = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: blue;
-	border-radius: 10px;
-	height: 250px;
-	width: 250px;
-	padding: 20px 10px;
-	margin: 1rem;
-	transition: all 0.5s ease-in-out;
+export const InfoRow = styled.div`
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    grid-template-areas: ${({ imgStart }) =>
+        imgStart ? `'col2 col1'` : `'col2 col1'`};
 
-	&:hover {
-		transform: scale(1.03);
-		transition: all 0.5s ease-in-out;
-		cursor: pointer;
-		background-image: linear-gradient(
-			rgba(255, 255, 255, 0.75),
-			rgba(255, 255, 255, 0.75)
-		);
-	}
+    @media screen and (max-width: 768px) {
+        grid-template-areas: ${({ imgStart }) =>
+            imgStart ? `'col2' 'col1'` : `'col2 col2' 'col1 col1'`};
+    }
 `;
 
-export const CardTitle = styled.h2`
-	color: white;
+export const Column1 = styled.div`
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col1;
 `;
 
-export const InfoFrame = styled.div`
-	height: 600px;
-	align-items: center;
-	justify-content: center;
-	padding: 2rem;
+export const Column2 = styled.div`
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col2;
 `;
 
-export const Info = styled.div`
-	display: grid;
-	grid-template-columns: 60% 40%;
-	grid-template-rows: 20% auto 20%;
-	grid-template-areas:
-		'img title'
-		'img desc'
-		'btnwrapper btnwrapper';
+export const TextWrapper = styled.div`
+    display: flex;
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
 `;
 
-export const InfoTitle = styled.h2`
-	grid-area: title;
-	background: green;
+export const InfoTitle = styled.h1`
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 `;
 
-export const Desc = styled.p`
-	grid-area: desc;
-`;
+export const SubTitle = styled.h3``;
 
-export const Image = styled.img`
-	grid-area: img;
-	height: 500px;
-	width: 500px;
-	object-fit: cover;
-	justify-self: center;
-`;
+export const Desc = styled.p``;
 
 export const BtnWrapper = styled.div`
-	grid-area: btnwrapper;
-	display: flex;
-	background: green;
-	height: 100%;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 `;
 
 export const Button = styled.button`
-	background: rgb(255, 195, 15);
-	border-radius: 4px;
-	font-size: 16px;
-	font-weight: bold;
-	padding: 16px;
-	border: 0;
-	color: white;
-	cursor: pointer;
-	width: 400px;
-	height: 50px;
-	margin: auto 2rem;
-	transition: all 0.5s ease-in-out;
+    width: 200px;
+    margin: 0.5rem 1rem;
+`;
 
-	&:hover {
-		transform: scale(1.03);
-		transition: all 0.5s ease-in-out;
-	}
+export const ImgWrap = styled.div`
+    max-width: 555px;
+`;
 
-	&:disabled {
-		opacity: 0.5;
-	}
+export const Img = styled.img`
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 0;
 `;

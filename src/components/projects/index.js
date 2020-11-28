@@ -1,68 +1,76 @@
 import React from 'react';
 import {
-	Background,
-	Frame,
-	Title,
-	CardFrame,
-	Card,
-	CardTitle,
-	InfoFrame,
-	Info,
-	InfoTitle,
-	Desc,
-	Image,
-	BtnWrapper,
-	Button,
+    Background,
+    Title,
+    Wrapper,
+    InfoRow,
+    Column1,
+    Column2,
+    TextWrapper,
+    InfoTitle,
+    SubTitle,
+    Desc,
+    BtnWrapper,
+    Button,
+    ImgWrap,
+    Img,
 } from './styles/projects';
 
 export default function Projects({ children, ...restProps }) {
-	return <Background {...restProps}>{children}</Background>;
+    return <Background {...restProps}>{children}</Background>;
 }
 
-Projects.Frame = function ProjectsFrame({ children, ...restProps }) {
-	return <Frame {...restProps}>{children}</Frame>;
-};
-
 Projects.Title = function ProjectsTitle({ children, ...restProps }) {
-	return <Title {...restProps}>{children}</Title>;
+    return <Title {...restProps}>{children}</Title>;
 };
 
-Projects.CardFrame = function ProjectsCardFrame({ children, ...restProps }) {
-	return <CardFrame {...restProps}>{children}</CardFrame>;
+Projects.Wrapper = function ProjectsWrapper({ children, ...restProps }) {
+    return <Wrapper {...restProps}>{children}</Wrapper>;
 };
 
-Projects.Card = function ProjectsCard({ children, ...restProps }) {
-	return <Card {...restProps}>{children}</Card>;
+Projects.InfoRow = function ProjectsInfoRow({ children, ...restProps }) {
+    return <InfoRow {...restProps}>{children}</InfoRow>;
 };
 
-Projects.CardTitle = function ProjectsCardTitle({ children, ...restProps }) {
-	return <CardTitle {...restProps}>{children}</CardTitle>;
+Projects.Column1 = function ProjectsColumn1({ children, ...restProps }) {
+    return <Column1 {...restProps}>{children}</Column1>;
 };
 
-Projects.InfoFrame = function ProjectsInfoFrame({ children, ...restProps }) {
-	return <InfoFrame {...restProps}>{children}</InfoFrame>;
+Projects.Column2 = function ProjectsColumn2({ children, ...restProps }) {
+    return <Column2 {...restProps}>{children}</Column2>;
 };
 
-Projects.Info = function ProjectsInfo({ children, ...restProps }) {
-	return <Info {...restProps}>{children}</Info>;
+Projects.TextWrapper = function ProjectsTextWrapper({
+    children,
+    ...restProps
+}) {
+    return <TextWrapper {...restProps}>{children}</TextWrapper>;
 };
 
 Projects.InfoTitle = function ProjectsInfoTitle({ children, ...restProps }) {
-	return <InfoTitle {...restProps}>{children}</InfoTitle>;
+    return <InfoTitle {...restProps}>{children}</InfoTitle>;
+};
+
+Projects.SubTitle = function ProjectsSubTitle({ children, ...restProps }) {
+    return <SubTitle {...restProps}>{children}</SubTitle>;
 };
 
 Projects.Desc = function ProjectsDesc({ children, ...restProps }) {
-	return <Desc {...restProps}>{children}</Desc>;
-};
-
-Projects.Image = function ProjectsImage({ children, ...restProps }) {
-	return <Image {...restProps}>{children}</Image>;
+    return <Desc {...restProps}>{children}</Desc>;
 };
 
 Projects.BtnWrapper = function ProjectsBtnWrapper({ children, ...restProps }) {
-	return <BtnWrapper {...restProps}>{children}</BtnWrapper>;
+    return <BtnWrapper {...restProps}>{children}</BtnWrapper>;
 };
 
 Projects.Button = function ProjectsButton({ children, ...restProps }) {
-	return <Button {...restProps}>{children}</Button>;
+    return <Button {...restProps}>{children}</Button>;
+};
+
+Projects.ImgWrap = function ProjectsImgWrap({ children, ...restProps }) {
+    return <ImgWrap {...restProps}>{children}</ImgWrap>;
+};
+
+Projects.Img = function ProjectsImg({ children, ...restProps }) {
+    return <Img {...restProps}>{children}</Img>;
 };
