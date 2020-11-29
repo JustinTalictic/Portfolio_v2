@@ -47,12 +47,16 @@ export function ProjectsContainer({ children }) {
                                 />
                             </Projects.ImgWrap>
                             <Projects.BtnWrapper>
-                                <Projects.Button>
-                                    <a href="">Live Preview</a>
-                                </Projects.Button>
-                                <Projects.Button>
-                                    <a href="">View Source</a>
-                                </Projects.Button>
+                                <a href="">
+                                    <Projects.Button active={obj.liveActive}>
+                                        Live Preview
+                                    </Projects.Button>
+                                </a>
+                                <a href="">
+                                    <Projects.Button active={obj.githubActive}>
+                                        View Source
+                                    </Projects.Button>
+                                </a>
                             </Projects.BtnWrapper>
                         </Projects.Column2>
                     </Projects.InfoRow>

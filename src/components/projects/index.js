@@ -65,8 +65,12 @@ Projects.BtnWrapper = function ProjectsBtnWrapper({ children, ...restProps }) {
     return <BtnWrapper {...restProps}>{children}</BtnWrapper>;
 };
 
-Projects.Button = function ProjectsButton({ children, ...restProps }) {
-    return <Button {...restProps}>{children}</Button>;
+Projects.Button = function ProjectsButton({ active, children, ...restProps }) {
+    return (
+        <Button disabled={active} {...restProps}>
+            {children}
+        </Button>
+    );
 };
 
 Projects.ImgWrap = function ProjectsImgWrap({ children, ...restProps }) {

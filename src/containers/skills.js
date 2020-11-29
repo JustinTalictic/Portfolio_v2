@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Skills } from '../components';
-import Viewer from 'react-viewer';
+import Pdf from '../documents/Resume.pdf';
 
 export function SkillsContainer({ children }) {
-    const [visible, setVisible] = useState(false);
-
     return (
         <Skills id="skills">
             <Skills.Banner>
@@ -34,27 +32,12 @@ export function SkillsContainer({ children }) {
                 </Skills.Frame>
             </Skills.Banner>
             <Skills.Wrapper>
-                <Skills.Resume
-                    onClick={() => {
-                        setVisible(true);
-                    }}
-                >
-                    <Viewer
-                        visible={visible}
-                        downloadable={true}
-                        onClose={() => {
-                            setVisible(false);
-                        }}
-                        images={[
-                            {
-                                src: './images/portfolio-picture/me.jpg',
-                                alt: ' my resume',
-                            },
-                        ]}
-                    />
-                    <Skills.Picture src="./images/icons/resume.svg" />
-                    <Skills.H2>Resume</Skills.H2>
-                </Skills.Resume>
+                <a href={Pdf} rel="noreferrer" target="_blank">
+                    <Skills.Resume>
+                        <Skills.Picture src="./images/icons/resume.svg" />
+                        <Skills.H2>Resume</Skills.H2>
+                    </Skills.Resume>
+                </a>
             </Skills.Wrapper>
         </Skills>
     );

@@ -87,6 +87,10 @@ export const Desc = styled.p`
 export const BtnWrapper = styled.div`
     display: flex;
     justify-content: center;
+
+    a {
+        margin: 1rem;
+    }
 `;
 
 export const Button = styled.button`
@@ -94,7 +98,7 @@ export const Button = styled.button`
     border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
-    margin: 1rem;
+    color: white;
     padding: 8px;
     border: 0;
     background: rgba(255, 195, 15, 0.8);
@@ -103,7 +107,6 @@ export const Button = styled.button`
 
     a {
         text-decoration: none;
-        color: white;
     }
 
     &:hover {
@@ -112,7 +115,9 @@ export const Button = styled.button`
     }
 
     &:disabled {
-        opacity: 0.5;
+        opacity: 0.45;
+        transform: scale(1);
+        cursor: default;
     }
 `;
 

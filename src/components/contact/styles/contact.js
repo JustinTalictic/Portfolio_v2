@@ -93,6 +93,7 @@ export const Submit = styled.button`
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         transform: scale(1.05);
