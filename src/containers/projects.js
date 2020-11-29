@@ -47,12 +47,12 @@ export function ProjectsContainer({ children }) {
                                 />
                             </Projects.ImgWrap>
                             <Projects.BtnWrapper>
-                                <a href="">
+                                <a href={obj.liveLink}>
                                     <Projects.Button active={obj.liveActive}>
                                         Live Preview
                                     </Projects.Button>
                                 </a>
-                                <a href="">
+                                <a href={obj.github}>
                                     <Projects.Button active={obj.githubActive}>
                                         View Source
                                     </Projects.Button>

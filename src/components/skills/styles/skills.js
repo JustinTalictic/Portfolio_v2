@@ -17,18 +17,17 @@ export const Banner = styled.div`
     align-content: center;
     justify-content: center;
     margin: 0 5%;
-    border-bottom: 3px solid rgba(255, 195, 15, 0.8);
+    border-bottom: 3px solid rgb(255, 195, 15);
 `;
 
-export const Frame = styled.div`
+export const Img = styled.img`
     margin: 0 5%;
-
-    img {
-        height: 5rem;
-    }
+    max-width: 4rem;
+    width: 100%;
 
     @media screen and (max-width: 768px) {
         margin: 0 2%;
+        max-width: 2.5rem;
     }
 `;
 

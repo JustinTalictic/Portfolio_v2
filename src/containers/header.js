@@ -46,7 +46,7 @@ export function HeaderContainer({ toggle, children }) {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-80}
+                            offset={-50}
                         >
                             About
                         </Header.NavLinks>
@@ -58,7 +58,7 @@ export function HeaderContainer({ toggle, children }) {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-80}
+                            offset={-50}
                         >
                             Skills
                         </Header.NavLinks>
@@ -70,7 +70,7 @@ export function HeaderContainer({ toggle, children }) {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-80}
+                            offset={-50}
                         >
                             Projects
                         </Header.NavLinks>
@@ -82,7 +82,7 @@ export function HeaderContainer({ toggle, children }) {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-310}
+                            offset={-50}
                         >
                             Contact
                         </Header.NavLinks>

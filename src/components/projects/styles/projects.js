@@ -4,16 +4,15 @@ export const Background = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding-top: 5rem;
     align-items: center;
-
-    @media screen and (max-width: 768px) {
-        padding: 100px 0;
-    }
 `;
 
 export const Title = styled.h1`
-    margin-bottom: 5rem;
+    padding: 5rem 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 2rem 0;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -24,7 +23,6 @@ export const Wrapper = styled.div`
     max-width: 1100px;
     margin-right: auto: 
     margin-left: auto;
-    padding: 0 24px;
     border-bottom: 2px solid grey;
     margin-bottom: 3rem;
 
@@ -94,14 +92,14 @@ export const BtnWrapper = styled.div`
 `;
 
 export const Button = styled.button`
-    width: 200px;
+    width: 100%;
     border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
     color: white;
-    padding: 8px;
-    border: 0;
-    background: rgba(255, 195, 15, 0.8);
+    padding: 8px 16px;
+    border: none;
+    background: rgb(255, 195, 15);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 

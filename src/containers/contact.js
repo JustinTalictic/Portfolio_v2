@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Contact } from '../components';
+import { Contact, Projects } from '../components';
 import { FirebaseContext } from '../context/firebase';
 
 export function ContactContainer({ children }) {
@@ -43,8 +43,9 @@ export function ContactContainer({ children }) {
 
     return (
         <Contact id="contact">
-            <Contact.Title>Contact Me</Contact.Title>
-
+            <Contact.TitleDiv>
+                <Projects.Title>Contact Me</Projects.Title>
+            </Contact.TitleDiv>
             <Contact.Frame onSubmit={handleSubmit} method="POST">
                 <Contact.Input
                     type="text"

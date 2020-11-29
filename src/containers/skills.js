@@ -6,30 +6,22 @@ export function SkillsContainer({ children }) {
     return (
         <Skills id="skills">
             <Skills.Banner>
-                <Skills.Frame>
-                    <img
-                        src="./images/skill-icons/css-icon.png"
-                        alt="css-icon"
-                    />
-                </Skills.Frame>
-                <Skills.Frame>
-                    <img
-                        src="./images/skill-icons/html5-icon.png"
-                        alt="html5-icon"
-                    />
-                </Skills.Frame>
-                <Skills.Frame>
-                    <img
-                        src="./images/skill-icons/javascript-icon.png"
-                        alt="javascript-icon"
-                    />
-                </Skills.Frame>
-                <Skills.Frame>
-                    <img
-                        src="./images/skill-icons/react-icon.png"
-                        alt="react-icon"
-                    />
-                </Skills.Frame>
+                <Skills.Img
+                    src="./images/skill-icons/css-icon.png"
+                    alt="css-icon"
+                />
+                <Skills.Img
+                    src="./images/skill-icons/html5-icon.png"
+                    alt="html5-icon"
+                />
+                <Skills.Img
+                    src="./images/skill-icons/javascript-icon.png"
+                    alt="javascript-icon"
+                />
+                <Skills.Img
+                    src="./images/skill-icons/react-icon.png"
+                    alt="react-icon"
+                />
             </Skills.Banner>
             <Skills.Wrapper>
                 <a href={Pdf} rel="noreferrer" target="_blank">

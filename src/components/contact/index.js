@@ -3,7 +3,7 @@ import {
     Background,
     Frame,
     Title,
-    Text,
+    TitleDiv,
     Input,
     Textarea,
     Submit,
@@ -23,8 +23,8 @@ Contact.Title = function ContactTitle({ children, ...restProps }) {
     return <Title {...restProps}>{children}</Title>;
 };
 
-Contact.Text = function ContactText({ children, ...restProps }) {
-    return <Text {...restProps}>{children}</Text>;
+Contact.TitleDiv = function ContactTitleDiv({ children, ...restProps }) {
+    return <TitleDiv {...restProps}>{children}</TitleDiv>;
 };
 
 Contact.Input = function ContactInput({ children, ...restProps }) {

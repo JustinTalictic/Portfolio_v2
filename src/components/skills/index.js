@@ -6,7 +6,7 @@ import {
     H2,
     Resume,
     Picture,
-    Frame,
+    Img,
 } from './styles/skills';
 
 export default function Skills({ children, ...restProps }) {
@@ -17,8 +17,8 @@ Skills.Banner = function SkillsBanner({ children, ...restProps }) {
     return <Banner {...restProps}>{children}</Banner>;
 };
 
-Skills.Frame = function SkillsFrame({ children, ...restProps }) {
-    return <Frame {...restProps}>{children}</Frame>;
+Skills.Img = function SkillsImg({ children, ...restProps }) {
+    return <Img {...restProps}>{children}</Img>;
 };
 
 Skills.Wrapper = function SkillsWrapper({ children, ...restProps }) {

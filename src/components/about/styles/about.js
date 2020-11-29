@@ -31,13 +31,12 @@ export const Title = styled.h1`
 
 export const Text = styled.p``;
 
-export const Picture = styled.div`
-    img {
-        height: 25rem;
-        box-shadow: 10px 8px 15px rgba(70, 70, 70, 0.6);
-    }
+export const Picture = styled.img`
+    max-width: 18rem;
+    width: 100%;
+    box-shadow: 10px 8px 15px rgba(70, 70, 70, 0.6);
 
     @media screen and (max-width: 768px) {
-        padding-top: 2rem;
+        margin-top: 2rem;
     }
 `;

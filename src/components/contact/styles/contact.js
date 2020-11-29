@@ -17,7 +17,7 @@ export const Background = styled.div`
         height: 1000px;
         grid-template-columns: 1fr;
         grid-template-rows:  15% 400px auto;
-        column-gap: 2rem;
+        column-gap: 1rem;
         grid-template-areas: 
         "title"
         "frame"
@@ -56,17 +56,21 @@ export const Frame = styled.form`
     }
 `;
 
-export const Title = styled.h1`
+export const TitleDiv = styled.div`
     grid-area: title;
-    padding-top: 5rem;
+    padding-top: 5rem 0;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 2rem 0;
+    }
 `;
 
-export const Text = styled.h3``;
+export const Title = styled.h1``;
 
 export const Input = styled.input`
     font-size: 18px;
     border: none;
-    border-bottom: 2px solid rgba(255, 195, 15, 0.8);
+    border-bottom: 2px solid rgb(255, 195, 15);
     padding: 7px 5px;
     margin-bottom: 1rem;
     background: transparent;
@@ -77,7 +81,7 @@ export const Textarea = styled.textarea`
     height: 200px;
     font-size: 18px;
     border: none;
-    border-bottom: 2px solid rgba(255, 195, 15, 0.8);
+    border-bottom: 2px solid rgb(255, 195, 15);
     padding: 7px 5px;
     background: transparent;
     resize: none;
@@ -89,7 +93,7 @@ export const Submit = styled.button`
     border: none;
     width: 100px;
     height: 3rem;
-    background: rgba(255, 195, 15, 0.8);
+    background: rgb(255, 195, 15);
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
