@@ -82,7 +82,7 @@ export function HeaderContainer({ toggle, children }) {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-80}
+                            offset={-310}
                         >
                             Contact
                         </Header.NavLinks>

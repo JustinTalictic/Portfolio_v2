@@ -14,6 +14,8 @@ import {
     Button,
     ImgWrap,
     Img,
+    UL,
+    LI,
 } from './styles/projects';
 
 export default function Projects({ children, ...restProps }) {
@@ -73,4 +75,12 @@ Projects.ImgWrap = function ProjectsImgWrap({ children, ...restProps }) {
 
 Projects.Img = function ProjectsImg({ children, ...restProps }) {
     return <Img {...restProps}>{children}</Img>;
+};
+
+Projects.UL = function ProjectsUL({ children, ...restProps }) {
+    return <UL {...restProps}>{children}</UL>;
+};
+
+Projects.LI = function ProjectsLI({ children, ...restProps }) {
+    return <LI {...restProps}>{children}</LI>;
 };

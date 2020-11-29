@@ -1,41 +1,51 @@
 [
-	{
-		"id": 1,
-		"title": "Netflix-Clone",
-		"description": "I created a clone of netflix",
-		"points": {
-			"1": "compound component",
-			"2": "custom hooks",
-			"3": "styled-components"
-		},
-		"img": "/images/project-img/startup.jpg",
-		"gitLink": "https://www.google.com",
-		"liveLink": "https://www.youtube.com"
-	},
-	{
-		"id": 2,
-		"title": "Netflix-Clone",
-		"description": "I created a clone of netflix",
-		"points": {
-			"1": "compound component",
-			"2": "custom hooks",
-			"3": "styled-components"
-		},
-		"img": "/images/project-img/startup.jpg",
-		"gitLink": "https://www.google.com",
-		"liveLink": "https://www.youtube.com"
-	},
-	{
-		"id": 3,
-		"title": "Netflix-Clone",
-		"description": "I created a clone of netflix",
-		"points": {
-			"1": "compound component",
-			"2": "custom hooks",
-			"3": "styled-components"
-		},
-		"img": "/images/project-img/startup.jpg",
-		"gitLink": "https://www.google.com",
-		"liveLink": "https://www.youtube.com"
-	}
+    {
+        "title": "Personal Portfolio",
+        "desc": "A React project to display my portfolio of work. It was built by me using React",
+        "featureItems": ["Smooth Scrolling", "Contact Form", "Responsive Design"],
+        "img": "portfolio.png",
+        "liveLink": "",
+        "github": "",
+        "techUsed": [
+        "ReactJS", 
+        "CSS", 
+        "HTML",
+        "FireBase",
+        "styled-components", 
+        "Compound Components"
+        ]
+    },
+    {
+        "title": "Netflix Clone",
+        "desc": "A netflix clone where I utalized compound componenets for code reuseability.",
+        "featureItems": ["Authentication", "Registration", "Login"],
+        "img": "netflix-clone.png",
+        "liveLink": "",
+        "github": "",
+        "techUsed": [
+        "ReactJS",
+        "CSS", 
+        "HTML",
+        "React Hooks",
+        "FireBase",
+        "styled-components",
+        "Fuse.js",
+        "Compound Components"
+        ]
+    },
+    {
+        "title": "Covid Tracker",
+        "desc": "A tracker that utilizes an API and displays the number of cases, recovery, and deaths of the COVID-19 pandemic. Shows global cases and is capable to filter by country.",
+        "featureItems": ["Graph representation", "Updated Daily"],
+        "img": "covid-19.png",
+        "liveLink": "",
+        "github": "",
+        "techUsed": [
+        "ReactJS",
+        "Material UI",
+        "React ChartJS 2",
+        "Axios"
+        ]
+    }
 ]
+    
