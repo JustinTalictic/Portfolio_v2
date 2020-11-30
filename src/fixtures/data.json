@@ -24,7 +24,7 @@
         "img": "netflix-clone.png",
         "liveActive": "",
         "githubActive": "",
-        "liveLink": "",
+        "liveLink": "https://netflix-project-66043.firebaseapp.com/",
         "github": "https://github.com/JustinTalictic/Netflix-Project",
         "techUsed": [
         "ReactJS",
@@ -44,7 +44,7 @@
         "img": "covid-19.png",
         "liveActive": "",
         "githubActive": "",
-        "liveLink": "",
+        "liveLink": "https://covid-tracker-a2fd0.firebaseapp.com/",
         "github": "https://github.com/JustinTalictic/COVID-Tracker",
         "techUsed": [
         "ReactJS",
