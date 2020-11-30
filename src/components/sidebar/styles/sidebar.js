@@ -8,8 +8,9 @@ export const Container = styled.aside`
     width: 100%;
     height: 100%;
     background: #464646;
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
@@ -42,6 +43,7 @@ export const Menu = styled.ul`
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 60px);
+        margin-left: -2rem;
     }
 `;
 

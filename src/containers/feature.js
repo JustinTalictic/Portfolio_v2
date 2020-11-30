@@ -9,6 +9,7 @@ export function FeatureContainer({ children }) {
                     autoPlay
                     loop
                     muted
+                    playsinline
                     src={'/videos/video.mp4'}
                     type="video/mp4"
                 />
