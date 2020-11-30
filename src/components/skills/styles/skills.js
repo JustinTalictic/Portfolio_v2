@@ -12,32 +12,26 @@ export const Container = styled.div`
 `;
 
 export const Banner = styled.div`
-    padding: 2rem 0 1rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    padding: 1.5rem 0;
     margin: 0 5%;
     border-bottom: 3px solid rgb(255, 195, 15);
 `;
 
 export const Img = styled.img`
     margin: 0 5%;
-    max-width: 4rem;
-    width: 100%;
+    width: 90px;
+    object-fit: scale-down;
 
     @media screen and (max-width: 768px) {
-        margin: 0 2%;
-        max-width: 2.5rem;
+        width: 50px;
     }
 `;
 
 export const Wrapper = styled.div`
-    max-width: 1000px;
     margin: 5rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 50px;
 
     a {
         text-decoration: none;
