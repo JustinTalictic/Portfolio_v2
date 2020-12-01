@@ -24,16 +24,6 @@ export function FooterContainer({ children }) {
                         <FaGithub />
                     </a>
                 </Footer.Picture>
-                <Footer.Picture>
-                    <a href="https://www.facebook.com/justin.talictic">
-                        <FaFacebook />
-                    </a>
-                </Footer.Picture>
-                <Footer.Picture>
-                    <a href="https://www.instagram.com/jaytalictic/">
-                        <FaInstagram />
-                    </a>
-                </Footer.Picture>
             </Footer.Group>
         </Footer>
     );

@@ -31,16 +31,6 @@ export function SidebarContainer({ isOpen, toggle, children }) {
                                 <FaGithub />
                             </a>
                         </Sidebar.Picture>
-                        <Sidebar.Picture>
-                            <a href="https://www.facebook.com/justin.talictic">
-                                <FaFacebook />
-                            </a>
-                        </Sidebar.Picture>
-                        <Sidebar.Picture>
-                            <a href="https://www.instagram.com/jaytalictic/">
-                                <FaInstagram />
-                            </a>
-                        </Sidebar.Picture>
                     </Sidebar.Group>
                 </Sidebar.Menu>
             </Sidebar.Wrapper>

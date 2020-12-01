@@ -99,16 +99,6 @@ export function HeaderContainer({ toggle, children }) {
                             <FaGithub />
                         </a>
                     </Header.Picture>
-                    <Header.Picture>
-                        <a href="https://www.facebook.com/justin.talictic">
-                            <FaFacebook />
-                        </a>
-                    </Header.Picture>
-                    <Header.Picture>
-                        <a href="https://www.instagram.com/jaytalictic/">
-                            <FaInstagram />
-                        </a>
-                    </Header.Picture>
                 </Header.Group>
             </Header.Frame>
             {children}

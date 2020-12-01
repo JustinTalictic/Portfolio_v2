@@ -1,7 +1,7 @@
 [
     {
         "title": "Personal Portfolio",
-        "desc": "A React project to display my portfolio of work. It was built by me using React",
+        "desc": "A React project to display my portfolio of work. It was built by me using React.",
         "featureItems": ["Smooth Scrolling", "Contact Form", "Responsive Design"],
         "img": "portfolio.png",
         "liveActive": "false",
@@ -19,8 +19,8 @@
     },
     {
         "title": "Netflix Clone",
-        "desc": "A netflix clone where I utilized compound componenets for code reuseability.",
-        "featureItems": ["Authentication", "Registration", "Login"],
+        "desc": "A netflix clone where I utilized compound components for code reuseability. As well as a functioning search feature and user authentication.",
+        "featureItems": ["Authentication", "Registration", "Login", "Search"],
         "img": "netflix-clone.png",
         "liveActive": "",
         "githubActive": "",

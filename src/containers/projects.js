@@ -24,7 +24,7 @@ export function ProjectsContainer({ children }) {
                                     ))}
                                 </Projects.UL>
                                 <Projects.SubTitle>
-                                    Technologies Used
+                                    Technologies Applied
                                 </Projects.SubTitle>
                                 <Projects.UL>
                                     {obj.techUsed.map(item => (
