@@ -17,6 +17,11 @@ export function FeatureContainer({ children }) {
             <Feature.Frame>
                 <Feature.Title>I am Justin Talictic</Feature.Title>
                 <Feature.Text>Front-End Developer</Feature.Text>
+                <Feature.Subtext>
+                    I am a graduate from the University of Houston with a
+                    bachelors in Computer Science. I am currently pursuing an
+                    opportunity to start a career in web development.
+                </Feature.Subtext>
                 <Feature.Button
                     to="about"
                     smooth={true}

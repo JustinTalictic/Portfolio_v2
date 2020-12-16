@@ -30,7 +30,9 @@ export const Title = styled.h1`
     text-transform: uppercase;
 `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+    line-height: 1.8;
+`;
 
 export const Picture = styled.img`
     max-width: 18rem;

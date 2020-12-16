@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sidebar } from '../components';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export function SidebarContainer({ isOpen, toggle, children }) {
     return (

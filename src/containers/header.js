@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../components';
-import {
-    FaBars,
-    FaFacebook,
-    FaGithub,
-    FaInstagram,
-    FaLinkedin,
-} from 'react-icons/fa';
+import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 
 export function HeaderContainer({ toggle, children }) {

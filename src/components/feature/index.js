@@ -4,6 +4,7 @@ import {
     Container,
     Title,
     Text,
+    Subtext,
     Button,
     HeroBg,
     VideoBg,
@@ -23,6 +24,10 @@ Feature.Title = function FeatureTitle({ children, ...restProps }) {
 
 Feature.Text = function FeatureText({ children, ...restProps }) {
     return <Text {...restProps}>{children}</Text>;
+};
+
+Feature.Subtext = function FeatureSubtext({ children, ...restProps }) {
+    return <Subtext {...restProps}>{children}</Subtext>;
 };
 
 Feature.Button = function FeatureButton({ children, ...restProps }) {
