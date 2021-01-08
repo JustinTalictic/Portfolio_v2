@@ -22,6 +22,10 @@ export function SkillsContainer({ children }) {
                     src="./images/skill-icons/react-icon.png"
                     alt="react-icon"
                 />
+                <Skills.Img
+                    src="./images/skill-icons/firebase-icon.png"
+                    alt="firebase-icon"
+                />
             </Skills.Banner>
             <Skills.Wrapper>
                 <a href={Pdf} rel="noreferrer" target="_blank">
