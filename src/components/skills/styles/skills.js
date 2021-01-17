@@ -18,8 +18,8 @@ export const Banner = styled.div`
 `;
 
 export const Img = styled.img`
-    margin: 0 5%;
-    width: 90px;
+    margin: 5px 5%;
+    width: 50px;
     object-fit: scale-down;
 
     @media screen and (max-width: 768px) {

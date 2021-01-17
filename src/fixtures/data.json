@@ -1,5 +1,24 @@
 [
     {
+        "title": "DevConnector",
+        "desc": "A full stack project created using the MERN stack. It is a social platform for developers, similar to a forum board. Where you can view other developers profiles that would list their skills, experience, education, socials, and github repositories. ",
+        "featureItems": ["Authentication", "Registration", "Protected Routes", "Posts and Comments", "Fetch Github Repositories"],
+        "img": "devconnector.png",
+        "liveActive": "",
+        "githubActive": "",
+        "liveLink": "https://still-dawn-47181.herokuapp.com/",
+        "github": "https://github.com/JustinTalictic/DevConnector",
+        "techUsed": [
+        "ReactJS",
+        "MongoDB",
+        "ExpressJS",
+        "NodeJS", 
+        "Redux", 
+        "Heroku", 
+        "MongooseJS"
+        ]
+    },
+    {
         "title": "Covid Tracker",
         "desc": "A tracker that utilizes an API and displays the number of cases, recovery, and deaths of the COVID-19 pandemic. Shows global cases and is capable of filtering data by country.",
         "featureItems": ["Graph representation", "Updated Daily"],
