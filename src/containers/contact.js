@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Contact, Projects } from '../components';
 import { FirebaseContext } from '../context/firebase';
+const nodemailer = require('nodemailer');
 
 export function ContactContainer({ children }) {
     const { firebase } = useContext(FirebaseContext);
@@ -13,6 +14,39 @@ export function ContactContainer({ children }) {
     const [status, setStatus] = useState('');
 
     const isInvalid = message === '' || emailAddress === '' || name === '';
+
+    const sendEmail = async event => {
+        event.preventDefault();
+
+        const subject = 'Portfolio Contact Email';
+
+        let testAccount = await nodemailer.createTestAccount();
+
+        let transporter = nodemailer.createTransport({
+            host: 'smtp.ethereal.email',
+            port: 587,
+            secure: false, // true for 465, false for other ports
+            auth: {
+                user: testAccount.user, // generated ethereal user
+                pass: testAccount.pass, // generated ethereal password
+            },
+        });
+
+        // send mail with defined transport object
+        let info = await transporter.sendMail({
+            from: `${name} <${emailAddress}>`, // sender address
+            to: 'justin.talictic@gmail.com', // list of receivers
+            subject: `${subject}`, // Subject line
+            text: `${message}`, // plain text body
+            html: '<b>Hello world?</b>', // html body
+        });
+
+        console.log('Message sent: %s', info.messageId);
+        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+
+        // Preview only available when sending through an Ethereal account
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    };
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -46,7 +80,7 @@ export function ContactContainer({ children }) {
             <Contact.TitleDiv>
                 <Projects.Title>Contact Me</Projects.Title>
             </Contact.TitleDiv>
-            <Contact.Frame onSubmit={handleSubmit} method="POST">
+            <Contact.Frame onSubmit={sendEmail} method="POST">
                 <Contact.Input
                     type="text"
                     placeholder="Your name"
