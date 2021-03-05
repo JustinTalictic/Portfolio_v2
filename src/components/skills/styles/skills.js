@@ -36,6 +36,7 @@ export const Wrapper = styled.div`
     a {
         text-decoration: none;
         color: black;
+        margin: 0 2.5%;
     }
 `;
 

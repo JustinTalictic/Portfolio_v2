@@ -1,6 +1,7 @@
 import React from 'react';
 import { Skills } from '../components';
 import Pdf from '../documents/Resume.pdf';
+import Certificates from '../documents/Certificates.pdf';
 
 export function SkillsContainer({ children }) {
     return (
@@ -44,6 +45,12 @@ export function SkillsContainer({ children }) {
                     <Skills.Resume>
                         <Skills.Picture src="./images/icons/resume.svg" />
                         <Skills.H2>Resume</Skills.H2>
+                    </Skills.Resume>
+                </a>
+                <a href={Certificates} rel="noreferrer" target="_blank">
+                    <Skills.Resume>
+                        <Skills.Picture src="./images/icons/windows.svg" />
+                        <Skills.H2>Certificates</Skills.H2>
                     </Skills.Resume>
                 </a>
             </Skills.Wrapper>
